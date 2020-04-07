@@ -14,8 +14,8 @@
             filePath = "janken_app/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "jankenGu(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,14 +24,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "74FD490D-DB46-4A12-AA2B-F5BD6344C703"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "janken_app/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "jankenPa(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -40,14 +40,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E1E5F50B-8FC2-41F0-88D9-D9405C256E73"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "janken_app/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "jankenPa(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -56,15 +56,157 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C434E419-41CD-4FB1-B097-FC90542EB9FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "janken_app/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "jankenRandom()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "602E67C3-DAA7-4089-9110-B941F147F087"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "janken_app/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "602E67C3-DAA7-4089-9110-B941F147F087 - f39d44c4ae7f39c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "janken_app.ViewController.maruImage.getter : __C.UIImageView"
+                  moduleName = "janken_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/janken_app/janken_app/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "602E67C3-DAA7-4089-9110-B941F147F087 - 54d4e64846e77796"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "janken_app.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; janken_app.ViewController"
+                  moduleName = "janken_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/janken_app/janken_app/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1405">
+               </Location>
+               <Location
+                  uuid = "602E67C3-DAA7-4089-9110-B941F147F087 - 553b39d3017d921"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "janken_app.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;janken_app.ViewController&gt;"
+                  moduleName = "janken_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/janken_app/janken_app/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABA4A477-C66F-4FB7-ADD0-06A411E347DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "janken_app/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "ABA4A477-C66F-4FB7-ADD0-06A411E347DA - 3ad64c80a48fec3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "janken_app.ViewController.batuImage.getter : __C.UIImageView"
+                  moduleName = "janken_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/janken_app/janken_app/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "ABA4A477-C66F-4FB7-ADD0-06A411E347DA - 54d4e64846e77796"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "janken_app.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; janken_app.ViewController"
+                  moduleName = "janken_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/janken_app/janken_app/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1535">
+               </Location>
+               <Location
+                  uuid = "ABA4A477-C66F-4FB7-ADD0-06A411E347DA - 553b39d3017d921"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "janken_app.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;janken_app.ViewController&gt;"
+                  moduleName = "janken_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/janken_app/janken_app/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1470">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D11E6ECC-5975-4AA8-A94C-0682A8B82B39"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "janken_app/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "jankenRandom()"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "jankenPa(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

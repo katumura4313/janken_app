@@ -14,11 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var JankenImage: UIImageView!
     @IBOutlet weak var jankenResult: UILabel!
     
+    @IBOutlet weak var jankenGuImage: UIButton!
+    @IBOutlet weak var jankenChokiImage: UIButton!
+    @IBOutlet weak var jankenPaImage: UIButton!
+    
+    
     var jankenGu = 0
     var jankenChoki = 1
     var jankenPa = 2
     var enemyHand = 0
     
+    let maruImage = UIImageView(image:UIImage.init(named: "mark_maru"))
+    let batuImage = UIImageView(image:UIImage.init(named: "mark_batsu"))
     
     
     override func viewDidLoad() {
@@ -61,18 +68,45 @@ class ViewController: UIViewController {
         }
     }
     
+    func displayMaruImage(position: CGPoint) {
+        maruImage.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        maruImage.center = position
+        hideMark()
+        maruImage.isHidden = false
+        view.addSubview(maruImage)
+    }
+    
+    func displayBatsuImage(position: CGPoint){
+        batuImage.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        batuImage.center = position
+        hideMark()
+        batuImage.isHidden = false
+        view.addSubview(batuImage)
+    }
+    //あいこ時にマークを非表示にする
+    
+    //maruの画像を非表示にする
+    //batuの画像を非表示にする
+    func hideMark(){
+        maruImage.isHidden = true
+        batuImage.isHidden = true
+    }
+    
     @IBAction func jankenPa(_ sender: Any) {
         
        jankenRandom()
-        
         if enemyHand == jankenPa {
             jankenResult.text = "あいこ"
         }
         else if enemyHand == jankenGu {
             jankenResult.text = "勝ち！"
+            
+            displayMaruImage(position: jankenPaImage.center)
         }
         else if enemyHand == jankenChoki{
             jankenResult.text = "負け！"
+           
+            displayBatsuImage(position: jankenPaImage.center)
         }
         
     }
@@ -86,9 +120,13 @@ class ViewController: UIViewController {
         }
         else if enemyHand == jankenPa {
             jankenResult.text = "勝ち！"
+            
+            displayMaruImage(position: jankenChokiImage.center)
         }
         else if enemyHand == jankenGu {
             jankenResult.text = "負け！"
+            
+            displayBatsuImage(position: jankenChokiImage.center)
             
         }
         
@@ -103,9 +141,13 @@ class ViewController: UIViewController {
         }
         else if enemyHand == jankenChoki {
             jankenResult.text = "勝ち！"
+            
+            displayMaruImage(position: jankenGuImage.center)
         }
         else if enemyHand == jankenPa {
             jankenResult.text = "負け！"
+            
+            displayBatsuImage(position: jankenGuImage.center)
         }
         
     }
