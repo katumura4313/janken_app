@@ -17,16 +17,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var jankenGuImage: UIButton!
     @IBOutlet weak var jankenChokiImage: UIButton!
     @IBOutlet weak var jankenPaImage: UIButton!
+    @IBOutlet weak var roundNumber: UILabel!
+    @IBOutlet weak var winCount: UILabel!
+    @IBOutlet weak var loseCount: UILabel!
     
     
     var jankenGu = 0
     var jankenChoki = 1
     var jankenPa = 2
     var enemyHand = 0
-    
     let maruImage = UIImageView(image:UIImage.init(named: "mark_maru"))
     let batuImage = UIImageView(image:UIImage.init(named: "mark_batsu"))
-    
+    var jankenRound = 1
+    var winNumber = 0
+    var loseNumber = 0
+    var resultImage:UIImage = UIImage(named: "pose_win_boy")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +53,7 @@ class ViewController: UIViewController {
         //"0"はグー
         //"1"はチョキ
         //"2"はパー
-
+        
     }
     
     func jankenRandom () {
@@ -92,21 +97,77 @@ class ViewController: UIViewController {
         batuImage.isHidden = true
     }
     
+    func addRoundCount(){
+        jankenRound += 1
+        roundNumber.text = "ラウンド" + String(jankenRound)
+        
+        //ラウンド終了
+        if jankenRound > 5 {
+            if  winNumber > loseNumber {
+                resultImage = UIImage(named: "pose_win_boy")!
+            }
+            else if loseNumber > winNumber {
+                resultImage = UIImage(named: "pose_lose_boy")!
+            }
+            
+            //勝ちと負けのカウントをリセットする
+            winNumber = 0
+            winCount.text = "勝ち" + String(winNumber)
+            loseNumber = 0
+            loseCount.text = "負け:" + String(loseNumber)
+            jankenRound = 0
+            
+            roundNumber.text = "終了"
+            showJankenResult()
+        }
+    }
+    
+    func addWincount(){
+        winNumber += 1
+        winCount.text = "勝ち:" + String(winNumber)
+    }
+    
+    func addloseCount(){
+        loseNumber += 1
+        loseCount.text = "負け:" + String(loseNumber)
+    }
+    
+    func showJankenResult(){
+        let storyboard: UIStoryboard = self.storyboard!
+        let resultVC = storyboard.instantiateViewController(withIdentifier: "JankenResultViewController") as! JankenResultViewController
+         //強制的にviewを読み込ませる
+        resultVC.loadViewIfNeeded()
+        resultVC.resultImage.setImage(resultImage, for: .normal)
+        
+        // modalPresentationStyleを指定する
+        resultVC.modalPresentationStyle = .fullScreen
+        resultVC.modalTransitionStyle = .flipHorizontal
+        self.present(resultVC, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func jankenPa(_ sender: Any) {
         
-       jankenRandom()
+        jankenRandom()
+        
         if enemyHand == jankenPa {
             jankenResult.text = "あいこ"
+            hideMark()
+            
         }
         else if enemyHand == jankenGu {
             jankenResult.text = "勝ち！"
-            
+            addWincount()
+            addRoundCount()
+           
             displayMaruImage(position: jankenPaImage.center)
         }
         else if enemyHand == jankenChoki{
             jankenResult.text = "負け！"
-           
+            addWincount()
+            addRoundCount()
             displayBatsuImage(position: jankenPaImage.center)
+            
         }
         
     }
@@ -117,16 +178,22 @@ class ViewController: UIViewController {
         
         if enemyHand == jankenChoki {
             jankenResult.text = "あいこ"
+            hideMark()
+            
         }
         else if enemyHand == jankenPa {
             jankenResult.text = "勝ち！"
-            
+            addWincount()
+            addRoundCount()
             displayMaruImage(position: jankenChokiImage.center)
+           
         }
         else if enemyHand == jankenGu {
             jankenResult.text = "負け！"
-            
+             addloseCount()
+            addRoundCount()
             displayBatsuImage(position: jankenChokiImage.center)
+           
             
         }
         
@@ -134,20 +201,27 @@ class ViewController: UIViewController {
     
     @IBAction func jankenGu(_ sender: Any) {
         
-       jankenRandom()
+        jankenRandom()
         
         if enemyHand == jankenGu {
             jankenResult.text = "あいこ"
+            hideMark()
+            
         }
         else if enemyHand == jankenChoki {
             jankenResult.text = "勝ち！"
+            addWincount()
+            addRoundCount()
             
             displayMaruImage(position: jankenGuImage.center)
+            
         }
         else if enemyHand == jankenPa {
             jankenResult.text = "負け！"
-            
+             addloseCount()
+            addRoundCount()
             displayBatsuImage(position: jankenGuImage.center)
+           
         }
         
     }

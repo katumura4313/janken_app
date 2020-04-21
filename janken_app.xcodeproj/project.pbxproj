@@ -15,6 +15,7 @@
 		CE0E93342417B77F00818B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0E93322417B77F00818B96 /* LaunchScreen.storyboard */; };
 		CE0E933F2417B77F00818B96 /* janken_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E933E2417B77F00818B96 /* janken_appTests.swift */; };
 		CE0E934A2417B77F00818B96 /* janken_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E93492417B77F00818B96 /* janken_appUITests.swift */; };
+		CE541E302445D8F600D49264 /* JankenResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE541E2F2445D8F600D49264 /* JankenResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE0E93452417B77F00818B96 /* janken_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = janken_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E93492417B77F00818B96 /* janken_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = janken_appUITests.swift; sourceTree = "<group>"; };
 		CE0E934B2417B77F00818B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE541E2F2445D8F600D49264 /* JankenResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CE0E93272417B77C00818B96 /* AppDelegate.swift */,
 				CE0E93292417B77C00818B96 /* SceneDelegate.swift */,
 				CE0E932B2417B77C00818B96 /* ViewController.swift */,
+				CE541E2F2445D8F600D49264 /* JankenResultViewController.swift */,
 				CE0E932D2417B77C00818B96 /* Main.storyboard */,
 				CE0E93302417B77F00818B96 /* Assets.xcassets */,
 				CE0E93322417B77F00818B96 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE541E302445D8F600D49264 /* JankenResultViewController.swift in Sources */,
 				CE0E932C2417B77C00818B96 /* ViewController.swift in Sources */,
 				CE0E93282417B77C00818B96 /* AppDelegate.swift in Sources */,
 				CE0E932A2417B77C00818B96 /* SceneDelegate.swift in Sources */,
